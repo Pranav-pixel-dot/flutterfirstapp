@@ -3,22 +3,21 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
   final int days = 30;
   final String name = "Ram";
+
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: const Text("Catalog App"),
       ),
       body: Center(
-        child: Container(
-          child: Text("welcome to $days of flutter by ${name}"),
-        ),
+        child: Text("welcome to $days of flutter by $name"),
       ),
-      drawer: Drawer(),
+      drawer: const Drawer(),
     );
   }
 }
