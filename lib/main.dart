@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:tutorial1/home_page.dart';
 
 void main() {
   runApp(Myapp());
 }
 
 class Myapp extends StatelessWidget {
-  const Myapp({super.key});
-
   @override
   Widget build(BuildContext context) {
+    
+    // ignore: prefer_const_constructors
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("welcome to flutter"),
-          ),
-        ),
-      ),
+      // ignore: prefer_const_constructors
+      home: HomePage(),
     );
   }
 }
